@@ -3,6 +3,6 @@ layout: default
 title: "Home"
 ---
 
-## You're ready to go!
+## This is masaoshi kataoka's personal home page.
 
-Start developing your Jekyll website.
+please read and enjoy my personal working, 
