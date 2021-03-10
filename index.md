@@ -14,5 +14,6 @@ title: "Home"
 
 
 {% for post in site.posts %}
-  - [{{ post.date | date: "%Y-%m-%d %a" }} {{ post.title }}]({{ post.url }}){:.post-li}
+  [{{ post.title }}]({{ post.url }}){:.post-li}
+  {:.posts}
 {% endfor %}
