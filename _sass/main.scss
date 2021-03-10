@@ -58,10 +58,6 @@ a {
   width: 70%;
   font-size: 1.4rem;
   font-weight: 300;
-
-  p {
-    font-size: 1.35rem;
-  }
 }
 
 .header-nav {
@@ -69,6 +65,10 @@ a {
     display: inline-block;
     margin-left: 20px;
   }
+}
+
+.description {
+  font-size: 1.5rem;
 }
 
 /* Posts page */
