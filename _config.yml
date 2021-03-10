@@ -1,3 +1,6 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "masayoshi kataoka's personal blog"
+title: "映画と英語とプログラミング言語"
+description: Tech関係のこと、Google WorkspaceやRubyのことが多めです
+
+default_locale: ja
