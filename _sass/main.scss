@@ -55,7 +55,7 @@ a {
 .container {
   margin: auto;
   max-width: 600px;
-  width: 70%;
+  width: 80%;
   font-size: 1.4rem;
   font-weight: 300;
 }
@@ -93,4 +93,8 @@ a {
 .sub-title {
   font-size: 2.3rem;
   font-weight: 300;
+}
+
+@media (min-width: 1024px) {
+  width: 70%;
 }
