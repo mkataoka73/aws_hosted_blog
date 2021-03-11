@@ -1,6 +1,6 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "映画と英語とプログラミング言語"
-description: Tech関係のこと、Google WorkspaceやRubyのことが多めです
+title: "プログラミングの学び方"
+description: ノンプログラマである30ぐらいの小さな塾勤めの若造が、呑気に気ままに、時にあくせく、プログラミングの学習日記をつけていくサイトです。
 
 default_locale: ja
