@@ -5,7 +5,8 @@ $backgroundColor: #ffffff;
 $bodyColor: #000000;
 $bodyFont: "noto sans jp",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 $baseFontWeight: 100;
-$bodyFontSize: 1.6rem;
+$fontSize--normal: 1.6rem;
+$fontSize--small: 1.2rem;
 
 $linkColor: rgb(205, 92, 92);
 
@@ -28,6 +29,10 @@ h3 {
   font-weight: 400;
 }
 
+ul {
+}
+
+/* code */
 code {
   font-family: inherit;
 }
@@ -36,12 +41,34 @@ code {
   overflow-x: scroll;
 }
 
+/* images */
+figure.image {
+  margin: 20px auto;
+
+  figcaption {
+    color: #111;
+    font-size: $fontSize--small;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  img {
+    width: 90%;
+    display: block;
+    margin: auto;
+
+    &.small {
+      width: 50%;
+    }
+  }
+}
+
+
 a {
   color: firebrick;
   text-decoration: none;
   text-decoration-color: rgba($linkColor, 0.5);
   transition: text-decoration 0.5s ease-in-out;
-  display: inline-block;
 
   &:visited {
     // color: inherit;
@@ -61,11 +88,14 @@ a {
   margin: auto;
   max-width: 600px;
   width: 80%;
-  font-size: $bodyFontSize;
+  font-size: $fontSize--normal;
   font-weight: 300;
 }
 
 .header-nav {
+  a {
+    display: inline-block;
+  }
   .nav-item:nth-of-type(n+2) {
     display: inline-block;
     margin-left: 20px;
@@ -73,7 +103,7 @@ a {
 }
 
 .description {
-  font-size: $bodyFontSize;
+  font-size: $fontSize--normal;
 }
 
 /* Posts page */
@@ -90,6 +120,7 @@ a {
     font-size: 2rem;
     list-style: none;
     margin: 12px 0;
+    vertical-align: text-top;
   }
 }
 
