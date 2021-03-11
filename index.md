@@ -3,17 +3,16 @@ layout: default
 title: "Home"
 ---
 
-# プログラミングの学び方
-{:.title}
+<h1 class="title">プログラミングの学び方</h1>
 
-ノンプログラマである30ぐらいの小さな塾勤めの若造が、呑気に気ままに、時にあくせく、プログラミングの学習日記をつけていくサイトです。
-{:.description}
+<p class="description">ノンプログラマである30ぐらいの小さな塾勤めの若造が、呑気に気ままに、時にあくせく、プログラミングの学習日記をつけていくサイトです。</p>
 
-## Recent posts
-{:.sub-title}
+<h2 class="sub-title">Recent posts</h2>
 
-
-{% for post in site.posts %}
-  [{{ post.title }}]({{ post.url }}){:.post-li}
-  {:.posts}
-{% endfor %}
+<ul class="posts">
+  {% for post in site.posts %}
+    <li class="post-li">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
