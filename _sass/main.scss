@@ -59,19 +59,24 @@ code {
 
 /* images */
 figure.image {
+  padding: 10px;
   margin: 20px auto;
 
   figcaption {
-    color: #111;
+    color: #666;
     font-size: $fontSize--small;
     margin-top: 10px;
     text-align: center;
   }
 
   img {
+    border: 1px solid lightgray;
+    border-radius: 1px;
+    padding: 1rem;
     width: 90%;
     display: block;
     margin: auto;
+    box-shadow: 5px 5px 0px 1px rgba(0,0,0,.1);
 
     &.small {
       width: 50%;
