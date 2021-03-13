@@ -37,6 +37,18 @@ code {
   font-family: inherit;
 }
 
+p code {
+  color: orange;
+  font-family: "Source Han Code JP", "Monaco", "Roboto Mono", monospace;
+  font-size: $fontSize--normal * 0.9;
+  font-weight: bolder;
+  display: inline-block;
+  padding: 1px 3px;
+  // background-color: lightgray;
+  border-radius: 2px;
+  margin: 2px;
+}
+
 .highlight {
   overflow-x: scroll;
 }
@@ -145,12 +157,27 @@ a {
   }
 }
 
+/* footer */
+.footer {
+  border-top: 1px solid #333;
+  color: #bbb;
+  font-size: $fontSize--small;
+  margin: 5rem auto 0;
+  padding-top: 2rem;
+  text-align: center;
+  width: 80%;
+}
+
 /* dark mode */
 @media (prefers-color-scheme: dark) {
   @import "bubble";
   body {
     background-color: #333;
     color: #fff;
+  }
+
+  p code {
+    color: orange;
   }
 
   a {
@@ -167,6 +194,11 @@ a {
 
   img[src*=svg] {
     filter: invert(100%);
+  }
+
+  .footer {
+    border-color: #777;
+    color: #bbb;
   }
 }
 /* 文字に関する情報 */
