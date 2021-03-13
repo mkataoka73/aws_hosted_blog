@@ -157,6 +157,10 @@ a {
     color: #e70;
   }
 
+  figure.image figcaption {
+    color: #ccc;
+  }
+
   img {
     filter: grayscale(30%);
   }
