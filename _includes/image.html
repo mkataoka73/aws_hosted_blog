@@ -1,8 +1,8 @@
 <figure class="image">
   {%- if include.class -%}
-    <img src="{{ include.url }}" alt="{{ include.description }}" class="{{ include.class }}">
+    <img src="{{ include.url }}" alt="{{ include.description }}" class="{{ include.class }}" oncontextmenu="return false;">
   {%- else -%}
-    <img src="{{ include.url }}" alt="{{ include.description }}">
+    <img src="{{ include.url }}" alt="{{ include.description }}" oncontextmenu="return false;">
   {%- endif -%}
   <figcaption>{{ include.description }}</figcaption>
 </figure>
