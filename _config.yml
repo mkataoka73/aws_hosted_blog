@@ -1,6 +1,7 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://master.d2wijfrp3v56sc.amplifyapp.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "En Partance"
 description: 外国語学習、プログラミング言語学習、読書や映画などの作品感想、そして日々の生活のために便利な家電や家具、料理のための情報を集めています。
+
 
 default_locale: ja
