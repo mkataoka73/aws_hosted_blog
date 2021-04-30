@@ -25,11 +25,8 @@ h2 {
   font-weight: 400;
 }
 
-h3 {
+h3, h4 {
   font-weight: 400;
-}
-
-ul {
 }
 
 /* code */
@@ -38,15 +35,30 @@ code {
 }
 
 p code {
-  color: orange;
+  color: #C9351C;
   font-family: "Source Han Code JP", "Monaco", "Roboto Mono", monospace;
   font-size: $fontSize--normal * 0.9;
   font-weight: bolder;
   display: inline-block;
   padding: 1px 3px;
-  // background-color: lightgray;
+  background-color: #eee;
   border-radius: 2px;
   margin: 2px;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.bq {
+  border-left: 0.5rem solid #ddd;
+  color: #555;
+  margin: 20px auto;
+  padding-left: 2rem;
+}
+
+.citation {
+  color: #444;
 }
 
 .highlight {
@@ -55,16 +67,18 @@ p code {
 
 ::-webkit-scrollbar {
   height: 2px;
+  width: 8px;
 }
 /*スクロールバーの軌道*/
 ::-webkit-scrollbar-track {
-  border-radius: 10px;
-  // box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+  background-color: #ddd;
+  // border-radius: 10px;
+  // box-shadow: inset 0 0 6px rgba(0, 0, 0, .5);
 }
 
 /*スクロールバーの動く部分*/
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 50, .5);
+  background-color: rgba(0, 0, 50, .4);
   border-radius: 10px;
   // box-shadow:0 0 0 1px rgba(255, 255, 255, .3);
 }
@@ -92,6 +106,9 @@ figure.image {
 
     &.small {
       width: 50%;
+    }
+    &.original {
+      width: auto;
     }
   }
 }
@@ -126,9 +143,13 @@ a {
 }
 
 .header-nav {
+
+  margin: 25px 0;
+
   a {
     display: inline-block;
   }
+
   .nav-item:nth-of-type(n+2) {
     display: inline-block;
     margin-left: 20px;
@@ -139,22 +160,44 @@ a {
   font-size: $fontSize--normal;
 }
 
-/* Posts page */
+.list {
+  font-size: $fontSize--normal;
+  list-style: none;
 
-.post-body p {
-  font-size: 1.7rem;
-  line-height: 1.5;
+  li {
+    margin: 8px 0;
+  }
+
+  &.numbered {
+    list-style: decimal;
+  }
 }
 
-.posts {
-  padding-left: 0;
+.list--no-bullets {
 
-  .post-li {
-    font-size: 2rem;
-    list-style: none;
-    margin: 12px 0;
-    vertical-align: text-top;
+}
+
+/* Posts page */
+
+.post-body {
+
+  p {
+    font-size: $fontSize--normal;
+    line-height: 1.7;
   }
+
+  .bq p {
+    font-size: $fontSize--normal * 0.9;
+  }
+}
+
+.post-date {
+  font-size: $fontSize--small * 1.2;
+  font-weight: bolder;
+}
+
+.code-title {
+  margin-bottom: 5px;
 }
 
 /* footer */
@@ -170,37 +213,9 @@ a {
 
 /* dark mode */
 @media (prefers-color-scheme: dark) {
-  @import "bubble";
-  body {
-    background-color: #333;
-    color: #fff;
-  }
-
-  p code {
-    color: orange;
-  }
-
-  a {
-    color: #e70;
-  }
-
-  figure.image figcaption {
-    color: #ccc;
-  }
-
-  img {
-    filter: grayscale(30%);
-  }
-
-  img[src*=svg] {
-    filter: invert(100%);
-  }
-
-  .footer {
-    border-color: #777;
-    color: #bbb;
-  }
+  @import "dark";
 }
+
 /* 文字に関する情報 */
 .title {
   font-size: 4rem;
