@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Resources on Writing
+permalink: resources-writing
 ---
 
 技術ライティングの書き方についてのリンク集です。現時点では英語が中心で本数も少ないですが、良質なものを見つけたら随時更新していきます。
