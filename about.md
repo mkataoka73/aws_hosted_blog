@@ -18,7 +18,7 @@ I took this phrase from a book [Partir - Le départ](https://www.amazon.co.jp/Pa
 ## About me
 {:.sub-title}
 
-{% include image.html url="/assets/images/profile-tokyo-univ-medium.jpg" description="At a small temple in the University of Tokyo" class="small" %}
+{% include image.html url="/assets/images/profile-tokyo-univ-medium.jpg" description="At a small temple in Komaba, Tokyo" class="small" %}
 
 
 ## My learning resources
