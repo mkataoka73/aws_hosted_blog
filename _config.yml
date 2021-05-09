@@ -1,4 +1,4 @@
-url: "https://master.d2wijfrp3v56sc.amplifyapp.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://en-partance.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "En Partance"
 description: "En partance is a site for departing, in spite of not knowing where the destination is."
@@ -6,4 +6,4 @@ description: "En partance is a site for departing, in spite of not knowing where
 
 default_locale: ja
 
-twitter_username: "ChenStudy"
+twitter_username: "mkataoka73"
