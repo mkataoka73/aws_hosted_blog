@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"><meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@mkataoka73" />
+
+
+  <meta name="twitter:title" content="GASの暗黙の型変換調べ | En Partance" />
+
+
+
+  <meta name="twitter:description" content="En partance is a site for departing, in spite of not knowing where the destination is." />
+
+
+
+  <meta name="twitter:image" content="http://localhost:4000/assets/images/logo.png" />
+
+<title>GASの暗黙の型変換調べ - En Partance</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="alternate" type="application/rss+xml" title="My Site RSS" href="/feed.xml" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="header-nav">
+  <a href="/" class="nav-item">Home</a>
+  <a href="/about" class="nav-item">About</a>
+  <a href="/posts" class="nav-item">Posts</a>
+  <!-- <a href="/langs" class="nav-item">Langs</a> -->
+</nav>
+
+      <h1 class="title">GASの暗黙の型変換調べ</h1>
+<div class="post-data">
+  <p class="post-date">2021/03/14 Sun</p>
+  <p class="post-tag"></p>
+</div>
+<div class="post-body">
+  <h2 id="きっかけ">きっかけ</h2>
+<p>GASの中級講座で、<code class="language-plaintext highlighter-rouge">if()</code>のカッコの中にはいるものは暗黙の型変換で<code class="language-plaintext highlighter-rouge">Boolean</code>になるよんという話をした。たとえば、</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="mi">123</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// here will be executed</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>ということ。</p>
+
+<p>同様に、</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="dl">"</span><span class="s2">foo</span><span class="dl">"</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// this also will be executed</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>である。</p>
+
+<p>これ、やりだすと当然、「空文字はどうなるんだろう？」とか気になります、よね？</p>
+
+<p>ということで、調べました。</p>
+
+<h5 id="test_stringsinbooleancontextgs">test_stringsInBooleanContext.gs</h5>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">test_string_in_boolean_context</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">this is a string</span><span class="dl">"</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span> <span class="c1">// true</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">test_empty_string_in_boolean_context</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">""</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span> <span class="c1">// false</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">test_literal_space_in_boolean_context</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">   </span><span class="dl">"</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span> <span class="c1">// true(!!)</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">test_tab_character_in_boolean_context</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">"</span><span class="se">\t</span><span class="dl">"</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span> <span class="c1">// true(!)</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">test_newline_character_in_boolean_context</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">"</span><span class="se">\n</span><span class="dl">"</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="nx">str</span><span class="p">));</span> <span class="c1">// true</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>満足。</p>
+
+</div>
+
+      <footer class="footer">
+  En Partance by Masayoshi Kataoka
+</footer>
+
+    </div>
+  </body>
+</html>
