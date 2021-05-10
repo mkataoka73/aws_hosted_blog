@@ -7,3 +7,5 @@ description: "En partance is a site for departing, in spite of not knowing where
 default_locale: ja
 
 twitter_username: "mkataoka73"
+
+theme: jekyll-theme-slate
