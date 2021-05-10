@@ -7,3 +7,5 @@ title: test
 {:.title}
 
 This is a test page.
+
+Add text for testing.(remove _site folder again. See what happens.)
