@@ -6,6 +6,8 @@ layout: default
 # About this site
 {:.title}
 
+<small>[日本語版](/about-ja)</small>
+
 ## About the title
 {:.sub-title}
 
