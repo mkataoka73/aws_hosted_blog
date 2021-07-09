@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-
+{% if page.hero %}
+  <div class="post-hero">
+    <img src="{{ page.hero }}" alt="">
+  </div>
+{% endif %}
 <h1 class="title">{{ page.title }}</h1>
 <div class="post-data">
   <p class="post-date">{{ page.date | date: '%Y/%m/%d %a'}}</p>
