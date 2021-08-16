@@ -26,15 +26,25 @@ h2 {
 }
 
 h3, h4 {
-  font-weight: 400;
+  // font-weight: 400;
 }
 
 /* headings */
+@mixin headingUnderLine($color: $linkColor, $bWidth: 2px, $bStyle: dotted) {
+  display: inline-block;
+  border-bottom: $bWidth $bStyle rgba($linkColor, 0.8);
+  padding-bottom: 8px;
+}
+
 .h2 {
   font-weight: 300;
-  border-bottom: 2px dotted rgba(0,0,0, 0.2);
-  padding-bottom: 8px;
-  width: 80%;
+  @include headingUnderLine($linkColor, 2px);
+}
+
+.h3 {
+  // font-size: 1.8rem;
+  font-weight: 400;
+  @include headingUnderLine($linkColor, 2px);
 }
 
 /* code */
@@ -252,11 +262,6 @@ a {
 
 .sub-title {
   font-size: 2.3rem;
-  font-weight: 300;
-}
-
-.h3 {
-  font-size: 1.8rem;
   font-weight: 300;
 }
 
