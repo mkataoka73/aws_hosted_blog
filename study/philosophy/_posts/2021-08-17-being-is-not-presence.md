@@ -2,6 +2,7 @@
 layout: post
 title: 「存在は現前ではない」
 permalink: being-is-not-presence
+hero: https://source.unsplash.com/-SmCKTIcH5E/800x600
 ---
 
 ## Timothy Morton
