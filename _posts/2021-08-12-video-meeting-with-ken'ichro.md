@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2021-08-12 kenkenさん
+title: 2021-08-12 オンライン勉強会 with kenkenさん
 ---
 
 kenkenさんと、横浜散歩、公開性、今村昌弘、地球星人、ギリシャ語、projectについて話しました。

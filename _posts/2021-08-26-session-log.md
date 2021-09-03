@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2021-08-26 kenkenさん
+title: 2021-08-26 オンライン勉強会 with kenkenさん
 ---
 
 冒頭のトピック
