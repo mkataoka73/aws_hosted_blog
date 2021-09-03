@@ -25,4 +25,4 @@ It starts from fundamental English grammars such as:
 
  ...etc.
 
- There are to make documentations simple and clear enough, avoid ambiguity and make it easy for the readers to understand your documentation. To summarize, this Google's tutorial on technical writing treats more fundamental topics than the Learn Enough tutorial.
+ These are to make documentations simple and clear enough, avoid ambiguity and make it easy for the readers to understand your documentation. To summarize, this Google's tutorial on technical writing treats more fundamental topics than the Learn Enough tutorial.

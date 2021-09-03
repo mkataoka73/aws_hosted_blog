@@ -8,15 +8,82 @@
     
       
       <item>
-        <title>Test post on 0510</title>
+        <title>2021-08-26 kenkenさん</title>
         
-          <description>&lt;h1 id=&quot;test&quot;&gt;test&lt;/h1&gt;
+          <description>&lt;p&gt;冒頭のトピック&lt;/p&gt;
 </description>
         
-        <pubDate>Mon, 10 May 2021 00:00:00 +0900</pubDate>
+        <pubDate>Thu, 26 Aug 2021 00:00:00 +0900</pubDate>
         <link>
-        http://localhost:4000/test-0501</link>
-        <guid isPermaLink="true">http://localhost:4000/test-0501</guid>
+        http://localhost:4000/2021/08/26/session-log.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/08/26/session-log.html</guid>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>「存在は現前ではない」</title>
+        
+          <description>&lt;h2 class=&quot;h2&quot; id=&quot;timothy-morton&quot;&gt;Timothy Morton&lt;/h2&gt;
+</description>
+        
+        <pubDate>Tue, 17 Aug 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/being-is-not-presence</link>
+        <guid isPermaLink="true">http://localhost:4000/being-is-not-presence</guid>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>Greece Alphabet And Accents</title>
+        
+          <description>&lt;p&gt;ギリシャ語のアルファベット&lt;/p&gt;
+</description>
+        
+        <pubDate>Fri, 13 Aug 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/study/greek/alpabet-and-accent</link>
+        <guid isPermaLink="true">http://localhost:4000/study/greek/alpabet-and-accent</guid>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>My first two bottles</title>
+        
+          <description>&lt;p&gt;ノンプロ研で知り合った方に、ワインのインポーターをされているFさんという方がいます。懇親会でよくワインの話を聞いている影響で&lt;a href=&quot;https://www.winomy.jp/blog/column/19421/&quot; target=&quot;_blank&quot;&gt;自然派ワイン（またはナチュラルワイン）&lt;/a&gt;
+に興味が沸き、7/30のお誕生日を機に手を出してみることにしました。飲んだワインと、味の感想をお伝えします。&lt;/p&gt;
+</description>
+        
+        <pubDate>Thu, 12 Aug 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/gamays</link>
+        <guid isPermaLink="true">http://localhost:4000/gamays</guid>
+        
+          <image>
+            <url>http://localhost:4000/assets/images/wines/tete-de-citron-2.jpg</url>
+            <link>http://localhost:4000</link>
+            <title>My first two bottles</title>
+          </image>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>2021-08-12 kenkenさん</title>
+        
+          <description>&lt;p&gt;kenkenさんと、横浜散歩、公開性、今村昌弘、地球星人、ギリシャ語、projectについて話しました。&lt;/p&gt;
+</description>
+        
+        <pubDate>Thu, 12 Aug 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/2021/08/12/video-meeting-with-ken'ichro.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/08/12/video-meeting-with-ken'ichro.html</guid>
         
       </item>
       

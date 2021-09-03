@@ -2,6 +2,7 @@
 layout: post
 title: GASの暗黙の型変換調べ
 date: 2021-03-14 01:58 +0900
+not_to_list: true
 ---
 ## きっかけ
 GASの中級講座で、`if()`のカッコの中にはいるものは暗黙の型変換で`Boolean`になるよんという話をした。たとえば、

@@ -2,6 +2,7 @@
 layout: post
 hero: https://source.unsplash.com/m9qWfcJrqsI/800x600
 permalink: study/greek/alpabet-and-accent
+not_to_list: true
 ---
 
 ギリシャ語のアルファベット
